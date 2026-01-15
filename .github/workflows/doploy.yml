@@ -32,12 +32,13 @@ jobs:
         run: npm run build -- --configuration production --base-href /phearunphin.github.io/
 
       - name: Add 404.html (Angular routing)
-        run: cp dist/<project-name>/browser/index.html dist/<project-name>/browser/404.html
+       run: cp dist/phearun-porfolio/browser/index.html dist/phearun-porfolio/browser/404.html
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/<project-name>/browser
+          path: dist/phearun-porfolio/browser
 
   deploy:
     runs-on: ubuntu-latest
