@@ -1,0 +1,60 @@
+<header id="header" class="header dark-background d-flex flex-column justify-content-between">
+
+  <div class="header-top justify-content-center">
+    <div class="profile-img">
+      <img src="assets/img/profile/phearun02.jpg" alt="" class="img-fluid">
+    </div>
+
+    <a routerLink="" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.webp" alt=""> -->
+      <h1 class="sitename">Phearun Phin</h1>
+
+    </a>
+    <br>
+
+    <span class="about align-items-center justify-content-center text-content-margin-top-15">
+      <span class="profile-section">
+        <div class="profile-meta">
+          <div class="location">
+            <i class="bi bi-geo-alt"></i>
+            <span>Irving, Texas, United States</span>
+          </div>
+          <div class="status">
+            <div class="status-indicator"></div>
+            <span>Available for projects</span>
+          </div>
+        </div>
+      </span>
+    </span>
+
+
+  </div>
+
+  <nav id="navmenu" class="navmenu">
+    <ul>
+
+      <li><a routerLink=""><i class="bi bi-house navicon"></i>Home</a></li>
+      <li><a routerLink="/skills"><i class="bi bi-person navicon"></i> Skill</a></li>
+      <li><a routerLink="/experiences"><i class="bi bi-file-earmark-text navicon"></i> Experience</a></li>
+      <li><a routerLink="/achievement"><i class="bi bi-images navicon"></i> Achievements</a></li>
+      <li><a routerLink="/projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
+
+      <li><a routerLink="/connect"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="social-links text-center">
+    <a href="https://github.com/phearun88" class="github"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/phearun-phin/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  </div>
+</header>
+
+
+
+<main class="main">
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+  <router-outlet></router-outlet>
+
+
+</main>
